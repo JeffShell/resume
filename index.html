@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+  </style>
+  <style>
+    body {}
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+
+  <style>
+    .projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .skills {}
+
+    #skills {
+
+      width: 500px;
+      height: 270px;
+    }
+    @media print {
+      #skills{display:none;}
+    }
+
+
+    .skills>.wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills>.wrapper>:first-child {
+      margin-right: 24px;
+    }
+
+    .skills>.wrapper>#skills {}
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {
+      color: #f60;
+    }
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+
+
+
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+      .jobs header{
+        flex-direction: column;
+      }
+      .jobs header >h3,
+      .jobs header >h4,
+      .jobs header >span {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="bio">
+      <h1>李杰富</h1>
+      <p>
+        男 | 23岁 | 前端开发工程师 
+      </p>
+      <p>
+        手机：15627564834 | 微信：Jeff2020606 | 邮箱：jeffshell@foxmail.com
+      </p>
+    </section>
+
+
+
+
+    <section class="skills">
+      <h2>技能</h2>
+      <div class="wrapper">
+        <ul>
+          <li>熟练掌握页面制作技巧，能够将设计稿 1:1 还原，并根据需要<strong>应用响应式布局</strong>和 <strong>CSS3 动画效果</strong>等技术。</li>
+          <li>熟练使用 <strong>ES6</strong> 语法，掌握它的特性和开发规范，如 <strong>包括 let 、 Promise 、 解构赋值 、 箭头函数</strong>等，能够将其应用在项目的开发上。</li>
+          <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+          <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括Vue3 、VueRouter、Vuex 等，能够根据需求进行定制</li>
+          <li>熟悉 <strong>React 技术栈</strong>，如 create-react-app、React Router、Redux 等，并能够组件化设计和状态管理能力。</li>
+          <li>熟练使用 Element-ui、Ant 蚂蚁金服 等 UI 框架，能够根据业务需求进行选择和定制。</li>
+          <li>熟悉 <strong>小程序、uni-app</strong>开发，能够根据官方文档进行开发项目。</li>
+          <li>了解使用 <strong>TypeScript</strong> ，具有类型注解、接口、泛型等概念的编程能力。</li>
+          <li>了解 <strong>Webpack 的配置和优化</strong></li>
+          <li>了解 Node.js 后端开发，了解 Express、Koa 等常见框架。</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="projects">
+      <h2>项目经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>前端商城后台管理</h3>
+            <!-- <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span> -->
+          </header>
+          <p>
+            本项目是一款商城后台管理的前端页面，主要包含<strong>用户管理、权限管理、数据统计、数据展示、编辑数据、自定义首页</strong>等功能。在该项目中，与同事共同承担了大部分模块的开发工作。
+            
+          </p>
+          <p>
+            该项目用到了 Vue框架的<strong>Vuex</strong> 、  <strong>VueRouter</strong> 、 <strong>ElementUI组件库</strong> 以及 <strong>Webpack</strong> 等。
+          </p>
+          <p>
+            前端页面的实现、交互逻辑优化和网络请求的处理。为实现单页面应用程序，我们集成了Vue Router路由管理器，并使用了Vuex状态管理器来管理页面数据的流动。在网络请求方面，采用了Axios进行数据的请求和响应处理。
+          </p>
+          <p>
+            <b>在本项目遇到的难题</b>：即默认当前月份的日历里，点击某个日期会弹出窗口，可以操作对某个员工的排班日程进行添加、删除和编辑，并将整理好的数据保存并提交到服务器上。由于没有第三方库的支持，需要手写这个日历功能来完成这个需求。
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>前端收银台中心</h3>
+            <!-- <span>
+              <a href="#">源码私有</a>
+              <a href="#">项目预览</a>
+            </span> -->
+          </header>
+          <p>
+            本项目用于收银系统，需要搭配扫码枪使用。我负责该项目的大部分模块，包括有<strong>购物车模块 </strong>、 <strong>扫码功能</strong> 、 <strong>员工打卡登录</strong> 、 <strong>商品退换货 </strong> 、 <strong>订单生成</strong>等
+          </p>
+          <p>
+            该项目用到了Vue框架的<strong>Vuex</strong> 、  <strong>VueRouter</strong> 、 <strong>ElementUI组件</strong> 和 <strong>Webpack</strong> 等。
+          </p>
+          <p>
+            由于该项目是用户付款的最后一步，对于用户体验和支付是否成功非常重要。支持微信支付、支付宝支付以及现金支付。为确保支付流程的顺畅，采用了面向对象编程的思想来设计代码结构，并针对各种支付方式进行了充分测试。
+          </p>
+          <p>
+            <b>在本项目遇到的难题</b>：在某个页面需要根据状态显示不同的信息，具体来说，该页面有7种状态，每种状态都需要显示不同的内容。为解决这个问题，将状态存储在Vuex中，并将该页面做好了组件化处理，移至私有组件库中，从而降低了代码的复杂度和维护成本。
+          </p>
+        </li>
+
+
+        
+        <li>
+          <header>
+            <h3>前端猫态商城小程序</h3>
+          </header>
+          <p>
+          <p>
+            本项目需要和前端商城后台管理搭配，专为客户提供便捷的购物渠道，主要包括<strong>预览商品</strong> 、  <strong>购买下单</strong> 、 <strong>在线支付</strong> 、 <strong>奖励活动</strong> 等等功能。
+          </p>
+
+          <p>
+            本人负责该项目的 “我的”模块、我的资产模块、个人资料模块。该项目基于 <strong>uniapp</strong> ，因此技术栈是 <strong>Vue全家桶</strong>，请求数据只用了 uniapp的 request方法 封装使用。大部分页面无使用第三方UI库，全部常用组件由开发手写并放入公共组件库中。部分页面使用第三方库，如日历组件。
+          </p>
+          
+          <p>
+            <b>在本项目遇到的难题</b>：打包时会因为包的体积过大而不允许被上传，解决方法是对项目进行分包，把主包切分成许多的子包，用户从主包进入，需要用到的子包就会自动下载对应的包，没用到就不会下载，这就是分包的好处。
+          </p>
+        </li>
+        
+        <li>
+          <header>
+            <h3>前端技术中台</h3>
+          </header>
+          <p>
+            本项目是根据公司的需求，共同开发出来中台系统，主要作用是用于提高开发者的效率，无需重复劳动。该项目的前端页面是基于 <strong>React</strong> 和 <strong>TypeScript</strong> 技术栈。使用的UI库为<strong>Ant Design</strong> ，在构建方面使用了<strong>Umi</strong> 构建的React项目，路由使用了<strong>Umi</strong> 自带的功能，状态管理则使用<strong>Dva</strong> 。
+          </p>
+
+          <p>
+            本人负责该项目的部分页面的交互实现及优化，以及对设计图的实现。
+          </p>
+          
+          <p>
+            <b>在本项目遇到的难题</b>：本项目展示的数据以及请求的数据次数比较多，例如有个页面会需要每秒请求一次（后端要求），主要是为了更新该服务在服务器的进度，而在前端展示进度条，并且在这个页面，会有多个这样的进度条，因此请求量会比较多。解决方法是：首先，请求应该为请求一次后会等待结果返回，返回的结果只要进度没到100%，就再请求一次，直到请求失败或者进度100%。把返回的结果对应到组件的进度条上显示在前端页面，确保数据及时准确。
+          </p>
+        </li>
+        
+      </ol>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- <section class="openSource">
+      <h2>开源项目</h2>
+      <ul>
+        <li>
+          <header>
+            <h3>自己写的 DOM 库</h3>
+            <a href="#">源码链接</a>
+          </header>
+          <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能</p>
+        </li>
+        <li class="page2">
+          <header>
+            <h3>会动的哆啦A梦</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="https:、、fangyinghang.com、make-a-pikachu、">项目预览</a>
+            </span>
+          </header>
+          <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+        </li>
+        <li>
+          <header>
+            <h3>简易画板</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+        </li>
+      </ul>
+    </section> -->
+
+
+
+    <section class="jobs">
+      <h2>工作经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3> 广州市鸿亿防伪产品有限公司 </h3>
+            <h4>开发工程师</h4>
+            <span><time>2021年8月</time>~<time>2023年3月</time></span>
+          </header>
+          <ul>
+            <li>
+              担任前端开发角色，负责公司后台、小程序及移动端页面开发，参与多个项目的开发，在任职期间，参与开发的项目有20多个，其中就包括内部系统、商城平台、后台管理。
+            </li>
+            <li>
+              负责多个完整项目，包括从开发到上线并持续优化。在同事合作维护的项目中，也承担了一定的开发任务。
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section class="others">
+      <h2>其他链接</h2>
+      <ul>
+        <li><a href="https:、、www.yuque.com、u682861?tab=books">我的博客</a>，学习技术文章</li>
+        <!-- <li><a href="https:、、github.com、frankfang">我的 GitHub</a>，过去三个月有 200 次提交</li> -->
+      </ul>
+    </section>
+
+  </article>
+</body>
+
+</html>
