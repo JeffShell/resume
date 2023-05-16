@@ -380,45 +380,85 @@
       </ol>
     </section>
 
-
-
-
-
-
-
-
-    <!-- <section class="openSource">
-      <h2>开源项目</h2>
-      <ul>
+    <section class="projects">
+      <h2>个人作品</h2>
+      <ol>
         <li>
           <header>
-            <h3>自己写的 DOM 库</h3>
-            <a href="#">源码链接</a>
-          </header>
-          <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能</p>
-        </li>
-        <li class="page2">
-          <header>
-            <h3>会动的哆啦A梦</h3>
+            <h3>橙子记帐</h3>
             <span>
-              <a href="#">源码链接</a>
-              <a href="https:、、fangyinghang.com、make-a-pikachu、">项目预览</a>
+              <a href="https://github.com/JeffShell/morney">源码链接</a>
+              -
+              <a href="https://eloquent-fermi-1dfff9.netlify.app/#/money">项目预览</a>
             </span>
           </header>
-          <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+          <p>
+            这是一个基于 <strong>Vue</strong>  / <strong>TypeScript</strong> 的记帐项目。
+          </p>
+          <p>
+            介绍：可以记录自己每天的收入与支出的情况，在需要回顾时可以通过统计页面查看之前的消费情况；记录数据（自带数字
+键盘），添加标签，自定义标签，删除标签，展示数据，统计数据等；整个项目主要用了Vue框架全家桶，以及使用TS写代
+码，使用webpack的svg-sprite-loader实现icon组件。
+          </p>
+          <p>
+            过程：在App.vue引入导航栏组件，就会造成所有页面都会出现导航栏组件，因此想要选择该组件出现在部分页面上，可以
+在main.ts引用导航栏组件。 目前该项目存在UI比较难看、没有直观的数据展示（如饼状图等）、没有删除已经记录下来的
+数据。
+          </p>
         </li>
         <li>
           <header>
-            <h3>简易画板</h3>
+            <h3>简约翻译</h3>
             <span>
-              <a href="#">源码链接</a>
-              <a href="#">项目预览</a>
+              <a href="https://github.com/JeffShell/Translation_wx_mini_program">源码链接</a>
+              -
+              <a href="https://eloquent-fermi-1dfff9.netlify.app/#/money">项目预览</a>
             </span>
           </header>
-          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+          <p>
+            一个基于 <strong>微信小程序</strong> / <strong>百度翻译API</strong> 的具有翻译功能的项目。
+          </p>
+          <p>
+            介绍：无需下载APP，打开小程序即可翻译。可以根据想要翻译的需求，选择不同的语种，可以查看翻译的记录。目前该项
+目存在一小部分手机端会出现删除翻译记录完成时不会立马更新页面，而是需要自己刷新生效。因为是需要搭配百度翻译
+API，所以我选择了使用promise异步操作来调用百度API
+          </p>
+          <p>
+            过程：在发布第一版小程序的时，用户反馈，该小程序存在翻译有结果却报翻译错误，部分手机没有问题，排查后发现，一
+些用户在翻译时在短时间内连续点击，多次请求百度API，第一次成功返回了结果，后几次因为第一次还在请求的时候没请求
+到，没有返回数据而报错，所以在请求API代码代码段设置了节流代码来防止用户多次点击请求。
+数据。
+          </p>
         </li>
-      </ul>
-    </section> -->
+
+
+        <li>
+          <header>
+            <h3>纯风UI</h3>
+            <span>
+              <a href="https://github.com/JeffShell/CyLun-test">源码链接</a>
+              -
+              <a href="https://romantic-mcnulty-b1c0b7.netlify.app">项目预览</a>
+            </span>
+          </header>
+          <p>
+            一款基于 <strong>Vue3</strong>  / <strong>TypeScript</strong> / <strong>Vite</strong>的 UI 框架。
+          </p>
+          <p>
+            介绍：该框架是学习Vue3后使用Vue3写的第一的项目。除了学习之外，主要目的是为了在工作中能够用以往写好的轮子直
+接复用，更好的开发效率。目前UI组件有Switch组件、Button组件、Dialog组件、Tabs组件。
+          </p>
+          <p>
+            过程：写UI时，一开始没有分离数据，导致存在了数据高度耦合现象，后续只好将文件组件化分类然后解耦，通过此次事
+件，我了解到数据解耦的重要性，也更加理解了mvvm的思想。 目前该项目存在的缺点是，只支持Vite创建的Vue3项目使
+用，而使用Vue-cli创建的Vue3会出现Bug。解决办法是重构排错，找出问题的所在。
+数据。
+          </p>
+        </li>
+      </ol>
+
+    </section>
+
 
 
 
@@ -446,8 +486,8 @@
     <section class="others">
       <h2>其他链接</h2>
       <ul>
-        <li><a href="https:、、www.yuque.com、u682861?tab=books">我的博客</a>，学习技术文章</li>
-        <!-- <li><a href="https:、、github.com、frankfang">我的 GitHub</a>，过去三个月有 200 次提交</li> -->
+        <li><a href="https://www.yuque.com/u682861?tab=books">我的博客</a>，学习技术文章</li>
+        <li><a href="https://github.com/JeffShell">我的 GitHub</a>，用来保存我的学习新的知识的项目代码</li>
       </ul>
     </section>
 
