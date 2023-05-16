@@ -221,6 +221,18 @@
       font-size: 18px;
       margin-left: auto;
     }
+    .codeBox {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+      text-align: center;
+
+    }
+    .codeImg {
+      padding-bottom: 20px;
+    }
   </style>
 
 
@@ -412,7 +424,7 @@
             <span>
               <a href="https://github.com/JeffShell/Translation_wx_mini_program">源码链接</a>
               -
-              <a href="https://eloquent-fermi-1dfff9.netlify.app/#/money">项目预览</a>
+              <a href="#codeBox">项目预览</a>
             </span>
           </header>
           <p>
@@ -490,6 +502,11 @@ API，所以我选择了使用promise异步操作来调用百度API
         <li><a href="https://github.com/JeffShell">我的 GitHub</a>，用来保存我的学习新的知识的项目代码</li>
       </ul>
     </section>
+
+    <div class="codeBox" id="codeBox">
+      <img class="codeImg" src="./codeImg.png" alt="">
+      <span>简约翻译的二维码小程序</span>
+    </div>
 
   </article>
 </body>
